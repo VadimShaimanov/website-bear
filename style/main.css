@@ -1,0 +1,328 @@
+header {
+  padding-top: 36.5px;
+  padding-bottom: 39.5px;
+  background-color: white;
+}
+header .header-navigation {
+  text-align: right;
+}
+header .header-navigation .nav-list {
+  font-weight: 600;
+  color: #2E4EA4;
+}
+header .header-navigation .nav-list:not(:last-child) {
+  margin-right: 32px;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: #eef3f9;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.banner svg {
+  width: 100%;
+}
+
+.priorities nav {
+  padding-top: 32px;
+  margin-bottom: 58px;
+}
+.priorities nav li {
+  font-weight: 600;
+}
+.priorities h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+.priorities .banner {
+  margin-bottom: 32px;
+}
+.priorities .btn {
+  border-radius: 2rem;
+  padding: 8px 11px 8px 16px;
+  font-size: 14px;
+  border-color: none;
+  height: 37px;
+  margin-bottom: 10px;
+}
+.priorities .btn:focus {
+  box-shadow: none;
+}
+.priorities .dropdown-toggle {
+  margin-right: 1px;
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  box-shadow: none;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.priorities .dropdown-toggle::after {
+  border: none;
+}
+.priorities .dropdown-toggle:hover {
+  background-color: #0770dc;
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.priorities .dropdown-list .active {
+  background-color: #0d6efd !important;
+}
+.priorities .dropdown-list .svg-x-close {
+  display: none;
+}
+.priorities .dropdown-list .svg-active {
+  display: inline-block;
+}
+.priorities .dropdown-menu {
+  margin-top: 16px !important;
+  padding: 16px 8px;
+  border-radius: 16px;
+  max-width: 340px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  box-shadow: 8px 8px 10px -6px rgba(0, 0, 0, 0.11);
+}
+.priorities .dropdown-menu li {
+  display: inline-block;
+}
+.priorities .dropdown-menu .dropdown-item {
+  background-color: #eef3f9;
+  display: inline;
+}
+.priorities .dropdown-menu li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.priorities .dropdown-menu .dropdown-item {
+  font-size: 14px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+.priorities .dropdown-menu .dropdown-item:hover {
+  background-color: #00aeef;
+  color: white;
+}
+.priorities .dropdown-menu .dropdown-item:active {
+  background-color: #2e4ea4;
+}
+.priorities .bear-off {
+  opacity: 0.5;
+}
+.priorities .bear-on {
+  opacity: 1;
+}
+.priorities .btn-close-off {
+  display: none;
+}
+.priorities .btn-close-on {
+  display: block;
+}
+.priorities .btn-primary-off:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.achievements {
+  padding-top: 49px;
+  padding-bottom: 128px;
+}
+.achievements .top-achievements {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+.achievements .top-achievements .span-achievements {
+  font-size: 12px;
+  font-weight: 500;
+}
+.achievements .top-achievements h5 {
+  padding-left: 1px;
+}
+.achievements .btn {
+  border-radius: 2rem;
+  padding: 4px 16px;
+  font-size: 14px;
+  border-color: none;
+}
+.achievements .btn:focus {
+  box-shadow: none;
+}
+.achievements .card-content {
+  padding: 16px;
+}
+.achievements .btn-like {
+  background-color: #eef3f9;
+  border: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  font-size: 14px;
+  padding: 4px 8px 4px 4px;
+}
+.achievements .btn-like svg {
+  margin-right: 4px;
+}
+.achievements .achievements-cards {
+  gap: 20px;
+}
+.achievements .achievements-cards .achievements-card {
+  background-color: white;
+  max-width: 380px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.achievements .achievements-cards .achievements-card .btn-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.achievements .achievements-cards .achievements-card .text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 41px;
+}
+.achievements .achievements-cards:not(:last-child) {
+  margin-bottom: 20px;
+}
+.achievements .btn-all-block {
+  padding: 8px 33px 8px;
+}
+
+.check-yourself {
+  padding-bottom: 128px;
+}
+.check-yourself .verify {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 49px;
+  padding-bottom: 44px;
+  padding-left: 43px;
+  margin-bottom: 128px;
+}
+.check-yourself .verify h2 {
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 91px;
+}
+.check-yourself .btn {
+  border-radius: 2rem;
+  padding: 4px 16px;
+  font-size: 17px;
+}
+.check-yourself .btn:focus {
+  box-shadow: none;
+}
+.check-yourself .look {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.check-yourself .look .look-block {
+  padding: 36px 25px 25px 36px;
+  margin-right: 20px;
+}
+.check-yourself .look h2 {
+  margin-bottom: 230px;
+  max-width: 331px;
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  line-height: normal;
+}
+.check-yourself .look .video-block {
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.footer-container {
+  background-color: #2e4ea4;
+  padding-top: 193px;
+  padding-bottom: 164px;
+}
+.footer-container p {
+  color: white;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .achievements .achievements-cards .achievements-card .btn-bottom {
+    flex-wrap: wrap;
+  }
+  .achievements .btn {
+    margin-bottom: 10px;
+  }
+  .achievements .achievements-cards .achievements-card {
+    max-width: 315px;
+  }
+}/*# sourceMappingURL=main.css.map */

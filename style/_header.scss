@@ -1,0 +1,18 @@
+$color-secondary:#2E4EA4;
+header {
+  padding-top: 36.5px;
+  padding-bottom: 39.5px;
+  background-color: white;
+
+  .header-navigation {
+    text-align: right;
+
+    .nav-list {
+      font-weight: 600;
+      color: $color-secondary;
+    }
+    .nav-list:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}

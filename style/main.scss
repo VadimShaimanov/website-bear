@@ -1,0 +1,344 @@
+@import "./_header";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+$btn-border-radius: 2rem;
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+$bg-color: #eef3f9;
+$color-secondary: #2e4ea4;
+$btn-focus: #00aeef;
+$btn-active: #0d6efd;
+
+li {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: $bg-color;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
+}
+.banner {
+  svg {
+    width: 100%;
+  }
+}
+.priorities {
+  nav {
+    padding-top: 32px;
+    margin-bottom: 58px;
+    li {
+      font-weight: 600;
+    }
+  }
+  h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .banner {
+    margin-bottom: 32px;
+  }
+  .btn {
+    border-radius: $btn-border-radius;
+    padding: 8px 11px 8px 16px;
+    font-size: 14px;
+    border-color: none;
+    height: 37px;
+    margin-bottom: 10px;
+  }
+  .btn:focus {
+    box-shadow: none;
+  }
+  .dropdown-toggle {
+    margin-right: 1px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: none;
+    border-radius: $btn-border-radius;
+    -webkit-border-radius: $btn-border-radius;
+    -moz-border-radius: $btn-border-radius;
+    -ms-border-radius: $btn-border-radius;
+    -o-border-radius: $btn-border-radius;
+  }
+  .dropdown-toggle::after {
+    border: none;
+  }
+  .dropdown-toggle:hover {
+    background-color: #0770dc;
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .dropdown-list {
+    .active {
+      background-color: $btn-active !important;
+    }
+
+    .svg-x-close {
+      display: none;
+    }
+    .svg-active {
+      display: inline-block;
+    }
+  }
+
+  .dropdown-menu {
+    li {
+      display: inline-block;
+    }
+    margin-top: 16px !important;
+    padding: 16px 8px;
+    border-radius: 16px;
+    max-width: 340px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    box-shadow: 8px 8px 10px -6px rgba(0, 0, 0, 0.11);
+    .dropdown-item {
+      background-color: $bg-color;
+      display: inline;
+    }
+    li:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    .dropdown-item {
+      font-size: 14px;
+      border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      -o-border-radius: 100px;
+    }
+    .dropdown-item:hover {
+      background-color: $btn-focus;
+      color: white;
+    }
+    .dropdown-item:active {
+      background-color: $color-secondary;
+    }
+  }
+  .bear-off {
+    opacity: 0.5;
+  }
+  .bear-on {
+    opacity: 1;
+  }
+  .btn-close-off {
+    display: none;
+  }
+  .btn-close-on {
+    display: block;
+  }
+  .btn-primary-off:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+}
+
+
+
+.achievements {
+  padding-top: 49px;
+  padding-bottom: 128px;
+  .top-achievements {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    .span-achievements {
+      font-size: 12px;
+      font-weight: 500;
+    }
+    h5 {
+      padding-left: 1px;
+    }
+  }
+
+  .btn {
+    border-radius: $btn-border-radius;
+    padding: 4px 16px;
+    font-size: 14px;
+    border-color: none;
+  }
+  .btn:focus {
+    box-shadow: none;
+  }
+  .card-content {
+    padding: 16px;
+  }
+  .btn-like {
+    background-color: $bg-color;
+    border: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    font-size: 14px;
+    padding: 4px 8px 4px 4px;
+
+    svg {
+      margin-right: 4px;
+    }
+  }
+  .achievements-cards {
+  // display: flex;
+   gap: 20px;
+
+  .achievements-card {
+    background-color: white;
+    max-width: 380px;
+   
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    .btn-bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 41px;
+    }
+  }
+  }
+  .achievements-cards:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .btn-all-block {
+    padding: 8px 33px 8px;
+  }
+  
+}
+.check-yourself {
+padding-bottom: 128px;
+  .verify {
+   
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 49px;
+    padding-bottom: 44px;
+    padding-left: 43px;
+    margin-bottom: 128px;
+
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      color: white;
+      margin-bottom: 91px;
+    }
+  }
+
+  .btn {
+    border-radius: 2rem;
+    padding: 4px 16px;
+    font-size: 17px;
+  }
+  .btn:focus {
+    box-shadow: none;
+  }
+  .look {
+  
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    .look-block {
+      padding: 36px 25px 25px 36px;
+      margin-right: 20px;
+    }
+
+    h2 {
+      margin-bottom: 230px;
+      max-width: 331px;
+      font-weight: 600;
+      font-size: 32px;
+      color: white;
+      line-height: normal;
+    }
+    .video-block {
+      padding: 10px;
+      background-color: white;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+}
+
+  }
+}
+.footer-container {
+  background-color: $color-secondary;
+  padding-top: 193px;
+  padding-bottom: 164px;
+  
+  p {
+    color: white;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+}
+// media запросы // 
+
+@media (min-width:769px) and (max-width: 1024px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .achievements .achievements-cards .achievements-card .btn-bottom {
+    flex-wrap: wrap;
+}
+
+.achievements .btn {
+  margin-bottom: 10px;
+}
+.achievements .achievements-cards .achievements-card {
+ max-width: 315px;
+}
+ 
+}
